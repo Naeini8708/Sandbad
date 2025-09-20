@@ -1,0 +1,1075 @@
+/* Function defintion */
+
+:root {
+    --body-color: #f4f3ec;
+    --text-color: #1c1817;
+    --text-color2: #ffffff;
+    --text-color3: #ff9f1c;
+    --bgc: #ffffff;
+    --bgc2: #f36f0f;
+    --bgc3: #1c1817;
+    --hover-color: #f36f0f;
+    --border-color: #f36f0f;
+    --border-color2: #1c1817;
+}
+
+/* Import font family */
+
+@font-face {
+    font-family: "Nohemi";
+    src: url(../sources/font-family/Nohemi-Font/Nohemi-VF-BF6438cc58ad63d.ttf);
+}
+
+@font-face {
+    font-family: "Nohemi-medium";
+    src: url(../sources/font-family/Nohemi-Font/Nohemi-Medium-BF6438cc5883899.ttf);
+}
+
+@font-face {
+    font-family: "Nohemi-bold";
+    src: url(../sources/font-family/Nohemi-Font/Nohemi-Bold-BF6438cc587b5b5.ttf);
+}
+
+/* Style for all elements */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for body */
+
+body {
+    height: auto;
+    font-family: "Nohemi";
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+/* Style for header */
+
+header {
+    width: 80%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid var(--border-color);
+    margin: 1rem auto 0rem auto;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 16px #ffd7b3;
+}
+
+.logo-container {
+    width: 10rem;
+    height: 5rem;
+    padding: 1.5rem;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-container {
+    width: 20rem;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-container ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu-container ul li {
+    list-style-type: none;
+}
+
+.menu-container ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 13px;
+    opacity: 0.7;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.menu-container ul li a:hover {
+    color: var(--hover-color);
+    border-bottom: 1.5px solid var(--border-color);
+}
+
+.search-container {
+    width: 15rem;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container svg {
+    cursor: pointer;
+}
+
+.search-click {
+    width: 7rem;
+    height: 100%;
+    background-color: var(--bgc3);
+    border-radius: 1rem;
+    color: var(--text-color2);
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.search-click:hover {
+    background-color: transparent;
+    border: 2px solid var(--border-color);
+    color: var(--text-color);
+}
+
+/* Style for main */
+
+main {
+    width: 100%;
+    height: auto;
+    font-family: "Nohemi";
+}
+
+.first-text-image-container {
+    width: 90%;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    margin: 0px auto;
+}
+
+.left-content {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-bold-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.text-bold {
+    font-size: 50px;
+}
+
+.text-bold-box {
+    width: 35rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.box-arrow {
+    width: 7rem;
+    height: 2.5rem;
+    background-color: var(--bgc2);
+    border-radius: 20rem 10rem 10rem 0rem;
+}
+
+.box-arrow img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.text-small-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: -7rem;
+}
+
+.icon-logo-container {
+    width: 10rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo1,
+#logo2 {
+    width: 4rem;
+    height: 4rem;
+}
+
+#logo1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#logo2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-small {
+    width: 20rem;
+    height: auto;
+    font-size: 13px;
+    line-height: 1.5rem;
+    opacity: 0.6;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.right-content {
+    width: 30%;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-section {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    width: 70%;
+    height: 70%;
+    border-radius: 50% 50% 0%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beach-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circular-line-bottom {
+    position: absolute;
+    top: 88%;
+    left: 60%;
+    border: 1px solid;
+    width: 5rem;
+    opacity: 0.7;
+}
+
+.circular-text-outer {
+    position: absolute;
+    display: flex;
+    pointer-events: none;
+    z-index: 2;
+    transform: rotate(315deg);
+    top: 9%;
+    right: 52%;
+}
+
+.circular-text {
+    font-size: 11px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 0.7;
+}
+
+.line-break {
+    width: 50%;
+    margin: 0rem auto;
+    border: 0.5px solid var(--border-color2);
+    opacity: 0.5;
+}
+
+/* style for best hotels */
+
+.best-hotel-container {
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+.title-best-hotel {
+    font-size: 18px;
+}
+
+.best-hotels {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1rem;
+}
+
+.hotel-espinas,
+.hotel-darvishi,
+.hotel-dad,
+.hotel-ramsar,
+.hotel-torang,
+.hotel-arg-shiraz {
+    width: 20rem;
+    height: 14rem;
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.hotel-espinas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.hotel-espinas:hover img {
+    filter: grayscale(1);
+    scale: 1.09;
+}
+
+.title-hotel {
+    width: 100%;
+    font-size: 1.8rem;
+    color: var(--text-color3);
+    z-index: 1;
+    position: absolute;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transition: 0.8s;
+    text-align: center;
+}
+
+.hotel-espinas:hover .title-hotel {
+    opacity: 1;
+}
+
+.hotel-darvishi img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.hotel-darvishi:hover img {
+    filter: grayscale(1);
+    scale: 1.09;
+}
+
+.hotel-darvishi:hover .title-hotel {
+    opacity: 1;
+}
+
+.hotel-dad img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.hotel-dad:hover img {
+    filter: grayscale(1);
+    scale: 1.09;
+}
+
+.hotel-dad:hover .title-hotel {
+    opacity: 1;
+}
+
+.hotel-ramsar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.hotel-ramsar:hover img {
+    filter: grayscale(1);
+    scale: 1.09;
+}
+
+.hotel-ramsar:hover .title-hotel {
+    opacity: 1;
+}
+
+.hotel-torang img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.hotel-torang:hover img {
+    filter: grayscale(1);
+    scale: 1.09;
+}
+
+.hotel-torang:hover .title-hotel {
+    opacity: 1;
+}
+
+.hotel-arg-shiraz img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.hotel-arg-shiraz:hover img {
+    filter: grayscale(1);
+    scale: 1.09;
+}
+
+.hotel-arg-shiraz:hover .title-hotel {
+    opacity: 1;
+}
+
+/* style for company support */
+
+.company-support-container {
+    width: 60%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    margin: 0rem auto;
+}
+
+.title-company-support {
+    font-size: 18px;
+}
+
+.company-support {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: auto;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-box {
+    width: 6.5rem;
+    height: 6.5rem;
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    border-radius: 1rem;
+    position: relative;
+    padding: 0.5rem;
+}
+
+.company-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.company-box:hover img {
+    opacity: 0;
+}
+
+.company-name {
+    position: absolute;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    transition: 0.8s;
+    color: var(--text-color);
+    opacity: 0;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 15px;
+}
+
+.company-box:hover .company-name {
+    opacity: 1;
+}
+
+/* style for footer */
+
+footer {
+    width: 80%;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--border-color);
+    margin: 0rem auto 2rem auto;
+    font-family: "Nohemi";
+    color: var(--text-color);
+    font-weight: 500;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 16px #ffd7b3;
+}
+
+.footer-top-section {
+    width: 100%;
+    height: 18rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.about-sandbad-container {
+    width: 30rem;
+    height: 100%;
+    font-size: 18px;
+}
+
+.text-about-sandbad {
+    font-size: 13px;
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.my-social-container {
+    width: 15rem;
+    height: 4rem;
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-us-container {
+    width: 15rem;
+    height: 100%;
+}
+
+.title-contact-us {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.we-number-container {
+    font-size: 13px;
+    margin-top: 1.5rem;
+}
+
+.icon-phone {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+.icon-number-phone {
+    width: 100%;
+    height: 1.5rem;
+    align-items: center;
+}
+
+.we-location-container {
+    width: 100%;
+    height: 2rem;
+    font-size: 13px;
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.Enemad-icon-container {
+    width: 6rem;
+    height: 6rem;
+}
+
+.Enemad-icon-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-bottom-section {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    font-weight: 700;
+}
+
+.text-copy-right {
+    width: 15rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    justify-content: flex-start;
+}
+
+.text-copy-right img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.designed-by {
+    width: 15rem;
+    height: 100%;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* start risponsive for tablet */
+/* rosponsive tablet size 1200px */
+
+@media screen and (max-width: 1200px) {
+    .circular-text-outer {
+        top: 10%;
+        right: 54%;
+    }
+}
+
+/* rosponsive tablet size 1024px */
+
+@media screen and (max-width: 1024px) {
+    .left-content {
+        width: 60%;
+    }
+
+    .text-bold {
+        font-size: 40px;
+    }
+
+    .hotel-espinas,
+    .hotel-darvishi,
+    .hotel-dad,
+    .hotel-ramsar,
+    .hotel-torang,
+    .hotel-arg-shiraz {
+        width: 18rem;
+    }
+}
+
+/* rosponsive tablet size 992px */
+
+@media screen and (max-width: 992px) {
+    /* this size of tablet not have problem */
+}
+
+/* start risponsive for mobile */
+/* risponsive mobile size 768px*/
+
+@media screen and (max-width: 768px) {
+    .first-text-image-container {
+        width: 100%;
+    }
+
+    .left-content {
+        width: 50%;
+        height: 100%;
+        justify-content: flex-start;
+    }
+
+    .right-content {
+        width: 50%;
+        height: 100%;
+    }
+
+    .text-bold-box {
+        width: 25rem;
+        gap: 1rem;
+    }
+
+    .text-bold {
+        font-size: 30px;
+    }
+
+    .box-arrow {
+        width: 5rem;
+        height: 2rem;
+    }
+
+    .best-hotel-container {
+        height: 26rem;
+    }
+
+    .hotel-espinas,
+    .hotel-darvishi,
+    .hotel-dad,
+    .hotel-ramsar,
+    .hotel-torang,
+    .hotel-arg-shiraz {
+        width: 14rem;
+        height: 10rem;
+    }
+
+    .about-sandbad-container {
+        font-size: 13px;
+    }
+
+    .text-about-sandbad {
+        font-size: 11px;
+        margin-top: 1rem;
+        line-height: 1.3rem;
+    }
+
+    .my-social-container {
+        height: 2rem;
+        margin-top: 1rem;
+    }
+
+    .my-social-container svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .title-contact-us {
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .we-number-container {
+        font-size: 11px;
+        margin-top: 1rem;
+    }
+
+    .we-location-container {
+        height: 5rem;
+        font-size: 11px;
+        margin-top: 1rem;
+    }
+
+    .Enemad-icon-container {
+        width: 6rem;
+        height: 5rem;
+    }
+}
+
+/* making menu for mobile */
+
+.menu {
+    width: 5rem;
+    height: 7rem;
+    transform: rotate(90deg);
+    font-size: 25px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.submenu {
+    width: 6rem;
+    height: 7rem;
+    background-color: var(--bgc);
+    border: 2px solid var(--border-color);
+    border-radius: 0rem 1rem 0.5rem 1rem;
+    transform: rotate(270deg) translate(-1rem, 5rem);
+    position: absolute;
+    padding: 10px;
+    z-index: 1;
+    display: none;
+    text-align: center;
+    box-shadow: 0px 0px 16px #ffd7b3;
+}
+
+.submenu ul li {
+    list-style-type: none;
+}
+
+.submenu ul li a {
+    font-size: 14px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* risponsive mobile size 576px*/
+
+@media screen and (max-width: 576px) {
+    .menu {
+        display: flex;
+    }
+
+    .menu-container {
+        display: none;
+    }
+
+    .search-container {
+        width: 10rem;
+        padding: 1rem;
+    }
+
+    .search-click {
+        height: 100%;
+        border-radius: 1rem;
+        border: 2px solid var(--border-color);
+        font-size: 10px;
+    }
+
+    .first-text-image-container {
+        width: 100%;
+        flex-direction: column-reverse;
+        height: 38rem;
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%;
+        height: 50%;
+    }
+
+    .circular-line-bottom {
+        left: 50%;
+        width: 7rem;
+    }
+
+    .circular-text-outer {
+        top: 10%;
+        right: 54%;
+    }
+
+    .text-bold-container {
+        margin-top: 2rem;
+        height: 90%;
+        justify-content: flex-start;
+    }
+
+    .best-hotel-container {
+        height: 38rem;
+    }
+
+    .best-hotels {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .title-hotel {
+        font-size: 1.5rem;
+    }
+
+    .company-support-container {
+        width: 100%;
+        height: 20rem;
+    }
+
+    .company-support {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        align-content: end;
+    }
+
+    .last-box-company {
+        margin-left: 60%;
+    }
+
+    footer {
+        height: 26rem;
+    }
+
+    .footer-top-section {
+        height: 22rem;
+    }
+
+    .about-sandbad-container {
+        font-size: 11px;
+    }
+
+    .title-contact-us {
+        font-size: 11px;
+    }
+
+    .Enemad-icon-container {
+        display: none;
+    }
+}
+
+/* risponsive mobile size 480px*/
+
+@media screen and (max-width: 480px) {
+    .text-small {
+        width: 15rem;
+        font-size: 10px;
+    }
+
+    .title-best-hotel {
+        font-size: 15px;
+    }
+
+    .best-hotel-container {
+        height: 31rem;
+    }
+
+    .hotel-espinas,
+    .hotel-darvishi,
+    .hotel-dad,
+    .hotel-ramsar,
+    .hotel-torang,
+    .hotel-arg-shiraz {
+        width: 12rem;
+        height: 8rem;
+    }
+
+    .title-hotel {
+        font-size: 1.3rem;
+    }
+
+    .title-company-support {
+        font-size: 15px;
+    }
+
+    .company-support-container {
+        height: 16.5rem;
+    }
+
+    .company-box {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .company-name {
+        font-size: 12px;
+    }
+
+    footer {
+        height: 33rem;
+    }
+
+    .footer-top-section {
+        flex-direction: column;
+        height: 28rem;
+    }
+
+    .about-sandbad-container {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .contact-us-container {
+        width: 100%;
+        height: 10rem;
+    }
+
+    .title-contact-us {
+        font-size: 13px;
+    }
+
+    .text-copy-right,
+    .designed-by {
+        font-size: 11px;
+    }
+}
+
+/* risponsive mobile size 412px*/
+
+@media screen and (max-width: 412px) {
+    .logo-container {
+        width: 12rem;
+        height: 8rem;
+        padding: 1rem;
+    }
+
+    .search-click {
+        height: 75%;
+        border-radius: 0.5rem;
+        font-size: 9px;
+    }
+
+    .best-hotel-container {
+        height: 70rem;
+    }
+
+    .best-hotels {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(6, auto);
+    }
+
+    .hotel-espinas,
+    .hotel-darvishi,
+    .hotel-dad,
+    .hotel-ramsar,
+    .hotel-torang,
+    .hotel-arg-shiraz {
+        width: 16rem;
+        height: 10rem;
+    }
+
+    footer {
+        height: 36rem;
+    }
+
+    .footer-top-section {
+        height: 32rem;
+    }
+
+    .about-sandbad-container {
+        line-height: 1.5rem;
+    }
+
+    .text-copy-right {
+        width: 25rem;
+    }
+
+    .text-bold-box {
+        width: 100%;
+    }
+}
+
+/* risponsive mobile size 360px*/
+
+@media screen and (max-width: 360px) {
+    .search-container {
+        width: 7rem;
+    }
+
+    .search-container svg {
+        display: none;
+    }
+
+    .text-bold {
+        font-size: 25px;
+    }
+
+    footer {
+        height: 39rem;
+    }
+
+    .footer-top-section {
+        height: 34rem;
+    }
+}

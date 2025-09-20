@@ -1,0 +1,696 @@
+/* Function defintion */
+
+:root {
+    --body-color: #f4f3ec;
+    --text-color: #1c1817;
+    --text-color2: #ffffff;
+    --text-color3: #ff9f1c;
+    --text-color4: #102542;
+    --bgc: #ffffff;
+    --bgc2: #f36f0f;
+    --bgc3: #1c1817;
+    --bgc4: #102542;
+    --hover-color: #f36f0f;
+    --border-color: #f36f0f;
+    --border-color2: #f87060;
+    --border-color3: #1c1817;
+}
+
+/* Import font family */
+
+@font-face {
+    font-family: "Nohemi";
+    src: url(../sources/font-family/Nohemi-Font/Nohemi-VF-BF6438cc58ad63d.ttf);
+}
+
+@font-face {
+    font-family: "Nohemi-medium";
+    src: url(../sources/font-family/Nohemi-Font/Nohemi-Medium-BF6438cc5883899.ttf);
+}
+
+@font-face {
+    font-family: "Nohemi-bold";
+    src: url(../sources/font-family/Nohemi-Font/Nohemi-Black-BF6438cc58744d4.ttf);
+}
+
+/* Style for all elements */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for body */
+
+body {
+    height: auto;
+    font-family: "Nohemi";
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+/* Style for header */
+
+header {
+    width: 80%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid var(--border-color);
+    margin: 1rem auto 0rem auto;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 16px #ffd7b3;
+}
+
+.logo-container {
+    width: 10rem;
+    height: 5rem;
+    padding: 1.5rem;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-container {
+    width: 20rem;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-container ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu-container ul li {
+    list-style-type: none;
+}
+
+.menu-container ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 13px;
+    opacity: 0.7;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.menu-container ul li a:hover {
+    color: var(--hover-color);
+    border-bottom: 1.5px solid var(--border-color);
+}
+
+.search-container {
+    width: 15rem;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container svg {
+    cursor: pointer;
+}
+
+.search-click {
+    width: 7rem;
+    height: 100%;
+    background-color: var(--bgc3);
+    border-radius: 1rem;
+    color: var(--text-color2);
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.search-click:hover {
+    background-color: transparent;
+    border: 2px solid var(--border-color);
+    color: var(--text-color);
+}
+
+/* style for main */
+
+main {
+    width: 100%;
+    height: 27rem;
+}
+
+.call-us-container {
+    width: 80%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    margin: 0rem auto;
+}
+
+.section-left-call {
+    width: 50%;
+    height: 100%;
+    background-color: var(--bgc);
+    padding: 1.5rem;
+}
+
+.title-call-us {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-color4);
+}
+
+.box-item-call {
+    width: 40rem;
+    height: 18rem;
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+}
+
+.our-text-consultants,
+.form-accept-request {
+    width: 50%;
+    height: 100%;
+    box-shadow: 0px 0px 8px #d3a376;
+    background-color: var(--bgc);
+    z-index: 2;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.title-text-call {
+    font-size: 18px;
+    line-height: 1.5rem;
+    color: var(--text-color4);
+    font-weight: 700;
+}
+
+.text-call {
+    font-size: 14px;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+
+.btn-get-advice {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--bgc4);
+    margin-top: 1.5rem;
+    color: var(--text-color2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-get-advice:hover {
+    background-color: transparent;
+    border: 2px solid var(--border-color3);
+    color: var(--text-color4);
+}
+
+.title-requ {
+    font-size: 18px;
+    line-height: 1.5rem;
+    color: var(--text-color4);
+    font-weight: 700;
+}
+
+.input-container-name,
+.input-email-container {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.input-container-name label {
+    font-size: 11px;
+}
+
+.input-container-name input {
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    border: 2px solid var(--border-color3);
+    margin-top: 0.3rem;
+    border-radius: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+.input-email-container label {
+    font-size: 11px;
+}
+
+.input-email-container input {
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    border: 2px solid var(--border-color3);
+    margin-top: 0.3rem;
+    border-radius: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+.btn-send-riqu {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--bgc4);
+    margin-top: 1.4rem;
+    color: var(--text-color2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-send-riqu:hover {
+    background-color: transparent;
+    border: 2px solid var(--border-color3);
+    color: var(--text-color4);
+}
+
+.section-right-call {
+    width: 50%;
+    height: 100%;
+    background-image: url(../sources/images/image-asset/call-center-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+hr {
+    width: 50%;
+    margin: 0rem auto;
+    border: 0.5px solid;
+    opacity: 0.5;
+}
+
+/* style for footer */
+
+footer {
+    width: 80%;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--border-color);
+    margin: 0rem auto 2rem auto;
+    font-family: "Nohemi";
+    color: var(--text-color);
+    font-weight: 500;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 16px #ffd7b3;
+}
+
+.footer-top-section {
+    width: 100%;
+    height: 18rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.about-sandbad-container {
+    width: 30rem;
+    height: 100%;
+    font-size: 18px;
+}
+
+.text-about-sandbad {
+    font-size: 13px;
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.my-social-container {
+    width: 15rem;
+    height: 4rem;
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-us-container {
+    width: 15rem;
+    height: 100%;
+}
+
+.title-contact-us {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.we-number-container {
+    font-size: 13px;
+    margin-top: 1.5rem;
+}
+
+.icon-phone {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+.icon-number-phone {
+    width: 100%;
+    height: 1.5rem;
+    align-items: center;
+}
+
+.we-location-container {
+    width: 100%;
+    height: 2rem;
+    font-size: 13px;
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.Enemad-icon-container {
+    width: 6rem;
+    height: 6rem;
+}
+
+.Enemad-icon-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-bottom-section {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    font-weight: 700;
+}
+
+.text-copy-right {
+    width: 15rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    justify-content: flex-start;
+}
+
+.text-copy-right img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.designed-by {
+    width: 15rem;
+    height: 100%;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* start risponsive */
+/* risponsive for tablet */
+
+@media screen and (max-width: 1200px) {
+    /* this size not have problem */
+}
+
+@media screen and (max-width: 1024px) {
+    .box-item-call {
+        width: 36rem;
+    }
+
+    footer {
+        height: 23rem;
+    }
+
+    .footer-top-section {
+        height: 19rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /* this size not have problem */
+}
+
+/* risponsive for mobile */
+
+@media screen and (max-width: 768px) {
+    .box-item-call {
+        width: 27rem;
+    }
+
+    .title-text-call {
+        font-size: 15px;
+        line-height: 1.2rem;
+    }
+
+    .text-call {
+        font-size: 13px;
+        line-height: 1.1rem;
+    }
+
+    .title-requ {
+        font-size: 15px;
+    }
+
+    .about-sandbad-container {
+        font-size: 13px;
+    }
+
+    .text-about-sandbad {
+        font-size: 11px;
+        margin-top: 1rem;
+        line-height: 1.3rem;
+    }
+
+    .my-social-container {
+        height: 2rem;
+        margin-top: 1rem;
+    }
+
+    .my-social-container svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .title-contact-us {
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .we-number-container {
+        font-size: 11px;
+        margin-top: 1rem;
+    }
+
+    .we-location-container {
+        height: 5rem;
+        font-size: 11px;
+        margin-top: 1rem;
+    }
+
+    .Enemad-icon-container {
+        width: 6rem;
+        height: 5rem;
+    }
+}
+
+/* making menu for mobile */
+
+.menu {
+    width: 5rem;
+    height: 7rem;
+    transform: rotate(90deg);
+    font-size: 25px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.submenu {
+    width: 6rem;
+    height: 7rem;
+    background-color: var(--bgc);
+    border: 2px solid var(--border-color);
+    border-radius: 0rem 1rem 0.5rem 1rem;
+    transform: rotate(270deg) translate(-1rem, 4.3rem);
+    position: absolute;
+    padding: 10px;
+    z-index: 1;
+    display: none;
+    text-align: center;
+    box-shadow: 0px 0px 16px #ffd7b3;
+}
+
+.submenu ul li {
+    list-style-type: none;
+}
+
+.submenu ul li a {
+    font-size: 14px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* risponsive mobile size 576px*/
+
+@media screen and (max-width: 576px) {
+    .call-us-container {
+        width: 100%;
+    }
+
+    .search-container {
+        width: 10rem;
+        padding: 1rem;
+    }
+
+    .search-click {
+        height: 100%;
+        border-radius: 1rem;
+        border: 2px solid var(--border-color);
+        font-size: 10px;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu-container {
+        display: none;
+    }
+
+    footer {
+        height: 26rem;
+    }
+
+    .footer-top-section {
+        height: 22rem;
+    }
+
+    .about-sandbad-container {
+        font-size: 11px;
+    }
+
+    .title-contact-us {
+        font-size: 11px;
+    }
+
+    .Enemad-icon-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        height: 50rem;
+    }
+
+    .call-us-container{
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .section-left-call, .section-right-call{
+        width: 100%;
+    }
+
+    .box-item-call{
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .our-text-consultants, .form-accept-request {
+        width: 100%;
+    }
+
+    footer {
+        height: 33rem;
+    }
+
+    .footer-top-section {
+        flex-direction: column;
+        height: 28rem;
+    }
+
+    .about-sandbad-container {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .contact-us-container {
+        width: 100%;
+        height: 10rem;
+    }
+
+    .title-contact-us {
+        font-size: 13px;
+    }
+
+    .text-copy-right,
+    .designed-by {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .logo-container {
+        width: 12rem;
+        height: 8rem;
+        padding: 1rem;
+    }
+
+    .search-click {
+        height: 75%;
+        border-radius: 0.5rem;
+        font-size: 9px;
+    }
+
+    footer {
+        height: 36rem;
+    }
+
+    .footer-top-section {
+        height: 32rem;
+    }
+
+    .about-sandbad-container {
+        line-height: 1.5rem;
+    }
+
+    .text-copy-right {
+        width: 25rem;
+    }
+
+    .text-bold-box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .search-container {
+        width: 7rem;
+    }
+
+    .search-container svg {
+        display: none;
+    }
+
+    footer {
+        height: 39rem;
+    }
+
+    .footer-top-section {
+        height: 34rem;
+    }
+}
